@@ -3,7 +3,6 @@ library(tidyverse)
 library(dplyr)
 
 
-setwd("~/UW//INFO201/ps6-interactive-web")
 temperature <- read_delim("UAH-lower-troposphere-long.csv.bz2")
 
 ui <- fluidPage(
@@ -117,7 +116,8 @@ server <- function(input, output) {
   output$table <- renderTable({
     temperature %>%
       sample_n(input$n) %>% 
-      filter(month == input$month)
+      filter(month == input$month) %>% 
+      arrange(desc(year))
   })
  
      

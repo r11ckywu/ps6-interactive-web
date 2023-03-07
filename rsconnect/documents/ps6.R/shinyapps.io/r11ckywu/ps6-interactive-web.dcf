@@ -5,9 +5,9 @@ account: r11ckywu
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8500492
-bundleId: 6925841
+bundleId: 6925952
 url: https://r11ckywu.shinyapps.io/ps6-interactive-web/
-when: 1678193263.02003
-lastSyncTime: 1678193263.02004
+when: 1678195811.13617
+lastSyncTime: 1678195811.13618
 asMultiple: FALSE
 asStatic: FALSE
