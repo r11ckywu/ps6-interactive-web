@@ -1,9 +1,10 @@
 library(shiny)
 library(tidyverse)
+library(dplyr)
 
-setwd("/Users/r11ckywu/UW/INFO201/ps6")
 
-temperature <- read_delim("~/UW/INFO201/ps6-interactive-web/data/UAH-lower-troposphere-long.csv.b")
+setwd("~/UW//INFO201/ps6-interactive-web")
+temperature <- read_delim("UAH-lower-troposphere-long.csv.bz2")
 
 ui <- fluidPage(
   tabsetPanel(
@@ -67,9 +68,6 @@ ui <- fluidPage(
 )
 
 
-
-
-
 server <- function(input, output) {
   # About Materials
   output$sample <- renderTable({
@@ -112,7 +110,7 @@ server <- function(input, output) {
     output$max_temp <- renderText({
       max_temp <- max(temperature2()$temp)
       min_temp <- min(temperature2()$temp)
-      paste("Maximum Temperature: ", max_temp, "<br>", 
+      paste("Maximum Temperature: ", max_temp, ", ", 
             "Minimum Temperature: ", min_temp)
     })
   })
