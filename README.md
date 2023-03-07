@@ -11,4 +11,5 @@ On this page, you can generate a line graph by moving the slider range for desir
 
 ## Table
 On the Table page, you can pull the dataset with your desired sample size and filter with the month you would like to overview. The page tells you the maximun and minimun of the temperature in the dataset based on your selection. 
+
 **Link to page:** https://r11ckywu.shinyapps.io/ps6-interactive-web/?_ga=2.110270849.523315543.1678189325-633573339.1677538872 
